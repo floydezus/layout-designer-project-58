@@ -1,6 +1,58 @@
 /** CSS STYLE **/
 
-.hello {
-  display: block;
-  color: #fff;
+/* VAR START */
+:root {
+  /* colors */
+  --white: #fff;
+  --transparent-white: #d7ccc0;
+  --light: #f5f4f0;
+  --primary: #fe8a02;
+  --primary-dark: #42413c;
+  --dark: #2a2626;
+  --transparent-dark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+
+  /* fonts */
+  --main-font: 'Open Sans';
+  --heading-font: 'Neucha';
+  --font-size: 16px;
+  --font-line-height: 1.6em;
+  --font-color: #2A2626;
+
+  /* headings */
+  --heading-line-height: 1.2em;
+
+  /* container */
+  --max-content-width: 1110px;
 }
+
+/* VAR END */
+
+/* COMPONENTS START */
+
+h1, h2, h3 {
+  font-family: var(--heading-font), sans-serif;
+  line-height: var(--heading-line-height);
+
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+.container {
+  max-width: var(--max-content-width);
+  margin: 100px auto;
+}
+
+
+/* COMPONENTS END */
