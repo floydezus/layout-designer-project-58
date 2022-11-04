@@ -29,17 +29,18 @@
 
 /* VAR END */
 
-/* COMMON START */
-.mb-40 {
-  margin-bottom: 40px;
+/* RESET START */
+body {
+  margin: 0;
 }
 
-/* COMMON END */
-
-/* RESET START */
 a {
   color: inherit;
   text-decoration: none;
+}
+
+p {
+  margin: 0;
 }
 
 /* RESET END */
@@ -79,6 +80,7 @@ h3 {
   position: relative;
   width: 100%;
   height: 914px;
+  overflow: hidden;
 }
 
 .bg-image::before {
@@ -153,3 +155,101 @@ h3 {
 }
 
 /* HEADER END */
+
+/* SECTION VIDEO START */
+.section-video {
+  height: 914px;
+  background-color: var(--white);
+}
+
+.video-header {
+  text-align: center;
+}
+
+.video-header-subtitle {
+  margin-bottom: 27px;
+  color: var(--primary);
+}
+
+.video-header-text {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.video-shadow {
+  display: flex;
+  justify-content: center;
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+/* SECTION VIDEO END */
+
+/* SECTION NAV START */
+.section-nav {
+  margin-top: -100px;
+  background-color: var(--primary-dark);
+}
+
+.nav-menu {
+  display: grid;
+  grid-gap: 20px 30px;
+  grid-template-rows: 323px 348px;
+  grid-template-columns: repeat(3, 350px);
+  width: 100%;
+  height: 740px;
+  margin-top: 116px;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu-item {
+  max-width: 100%;
+  background-color: var(--light);
+}
+
+.nav-menu-item a {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.nav-menu-title {
+  color: var(--primary);
+  font-weight: 400;
+  font-size: 52px;
+  font-family: var(--heading-font);
+  font-style: normal;
+  line-height: var(--heading-line-height);
+  background-color: inherit;
+}
+
+.item-num {
+  margin-bottom: 40px;
+  color: var(--primary-dark);
+  font-size: 64px;
+  font-family: var(--heading-font);
+  line-height: 1;
+}
+
+.item-header {
+  margin-bottom: 16px;
+  color: var(--primary);
+  font-weight: 400;
+}
+
+/* SECTION NAV END */
+
+/* COMMON START */
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.color-white {
+  color: var(--white);
+}
+
+/* COMMON END */
