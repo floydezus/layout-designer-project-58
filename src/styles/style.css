@@ -9,7 +9,7 @@
   --primary: #fe8a02;
   --primary-dark: #42413c;
   --dark: #2a2626;
-  --transparent-dark: #908d8b;
+  --secondary: #908d8b;
   --brown: #b09a81;
   --blue: #1085c5;
 
@@ -87,6 +87,7 @@ h3 {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -107,6 +108,27 @@ h3 {
   font-size: var(--font-size);
   font-family: var(--main-font), sans-serif;
   line-height: var(--font-line-height);
+}
+
+.header-minor {
+  width: 100%;
+  margin: 100px 0 20px;
+  padding: 5px 10px;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: var(--main-font);
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.header-minor.dark {
+  color: var(--white);
+  background-color: var(--brown);
+}
+
+.header-minor.light {
+  color: var(--brown);
+  background-color: var(--white);
 }
 
 /* COMPONENTS END */
@@ -238,6 +260,38 @@ h3 {
 }
 
 /* SECTION NAV END */
+
+/* SECTION 1 START */
+.effect-ikea-title {
+  margin-bottom: 30px;
+}
+
+.effect-ikea-subtitle {
+  color: var(--dark);
+  font-weight: 400;
+  font-size: 34px;
+  font-family: var(--heading-font);
+  line-height: 1.2em;
+}
+
+.effect-ikea-header::before {
+  color: var(--secondary);
+  font-weight: 400;
+  font-size: 24px;
+  font-family: var(--heading-font);
+  line-height: 29px;
+  content: "Когнитивные искажения";
+}
+
+.effect-ikea-img {
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+.effect-ikea-text {
+  width: 540px;
+}
+
+/* SECTION 1 END */
 
 /* COMMON START */
 .mb-12 {
