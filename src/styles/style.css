@@ -63,6 +63,7 @@ h1 {
 }
 
 h2 {
+  color: var(--primary);
   font-size: 60px;
 }
 
@@ -78,9 +79,13 @@ h3 {
 
 .bg-image {
   position: relative;
+  z-index: -2;
   width: 100%;
-  height: 914px;
   overflow: hidden;
+}
+
+.bg-image.dark {
+  background-color: var(--brown);
 }
 
 .bg-image::before {
@@ -185,6 +190,7 @@ h3 {
 }
 
 .video-header {
+  color: var(--dark);
   text-align: center;
 }
 
@@ -261,12 +267,20 @@ h3 {
 
 /* SECTION NAV END */
 
-/* SECTION 1 START */
-.effect-ikea-title {
+/* SECTION TYPICAL CONTENT BIASE START */
+.bias-title {
   margin-bottom: 30px;
 }
 
-.effect-ikea-subtitle {
+.bias-title.light {
+  color: var(--dark);
+}
+
+.bias-title.dark {
+  color: var(--white);
+}
+
+.bias-subtitle {
   color: var(--dark);
   font-weight: 400;
   font-size: 34px;
@@ -274,7 +288,7 @@ h3 {
   line-height: 1.2em;
 }
 
-.effect-ikea-header::before {
+.bias-header::before {
   color: var(--secondary);
   font-weight: 400;
   font-size: 24px;
@@ -283,17 +297,120 @@ h3 {
   content: "Когнитивные искажения";
 }
 
-.effect-ikea-img {
+.bias-header.light::before {
+  color: var(--transparent-white);
+}
+
+.bias-img {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
-.effect-ikea-text {
+.bias-text {
   width: 540px;
 }
 
-/* SECTION 1 END */
+/* SECTION TYPICAL CONTENT END */
+
+/* FOOTER START */
+.footer-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 55px;
+  background-color: var(--primary-dark);
+}
+
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-controller {
+  display: grid;
+  grid-template-columns: 423px 70px;
+}
+
+.contacts-input {
+  height: 50px;
+  padding: 15px;
+}
+
+.contacts-input::placeholder {
+  color: #757575;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: var(--main-font);
+  line-height: var(--font-line-height);
+  opacity: 0.2;
+}
+
+.contacts-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background: var(--primary);
+  border: 0;
+  cursor: pointer;
+}
+
+.contacts-btn:hover {
+  background: var(--secondary);
+}
+
+.contacts-btn:active {
+  opacity: 0.7;
+}
+
+.contacts-btn::before {
+  content: url("../img/icons/send.svg");
+}
+
+.contact-label {
+  margin-bottom: 9px;
+  color: var(--white);
+  font-weight: 400;
+  font-size: 18px;
+  font-family: var(--main-font);
+  line-height: var(--font-line-height);
+}
+
+.contacts-helper {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 12px;
+  font-family: var(--main-font);
+  line-height: var(--font-line-height);
+}
+
+.contacts-helper a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.authors {
+  margin-top: 60px;
+  color: #000;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: var(--main-font);
+  line-height: var(--font-line-height);
+  text-align: center;
+}
+
+.authors a {
+  color: rgba(0 125 193 / 100%);
+  text-decoration: underline;
+}
+
+.authors p {
+  margin-bottom: 16px;
+}
+
+/* FOOTER END */
 
 /* COMMON START */
+
 .mb-12 {
   margin-bottom: 12px;
 }
@@ -303,6 +420,10 @@ h3 {
 }
 
 .color-white {
+  color: var(--white);
+}
+
+.light {
   color: var(--white);
 }
 
