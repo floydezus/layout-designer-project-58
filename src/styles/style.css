@@ -163,19 +163,15 @@ h3 {
   margin-top: 185px;
 }
 
-.header-paragraph {
+.header-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 540px;
   max-width: 100%;
 }
 
-.header-btn-wrapper {
-  width: 148px;
-  height: 49px;
-}
-
 .header-btn {
-  max-width: 100%;
-  max-height: 100%;
   padding: 12px 24px;
   color: var(--white);
   font-weight: 700;
@@ -232,8 +228,7 @@ h3 {
   grid-template-rows: 323px 348px;
   grid-template-columns: repeat(3, 350px);
   width: 100%;
-  height: 740px;
-  margin-top: 116px;
+  margin: 100px 0 0;
   padding: 0;
   list-style: none;
 }
